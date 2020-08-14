@@ -1,0 +1,16 @@
+{
+  "name": "1er-proyecto-sem1",
+  "version": "1.0.0",
+  "description": "'Primer proyecto,semana 1, Venta de Libros Usados'",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://moiserma@bitbucket.org/moiserma/1er-proyecto-sem1.git"
+  },
+  "author": "Moises Serrano Marin",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/moiserma/1er-proyecto-sem1#readme"
+}
