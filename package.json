@@ -4,6 +4,7 @@
   "description": "'Primer proyecto,semana 1, Venta de Libros Usados'",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Moises Serrano Marin",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/moiserma/1er-proyecto-sem1#readme"
+  "homepage": "https://bitbucket.org/moiserma/1er-proyecto-sem1#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
