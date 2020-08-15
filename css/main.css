@@ -1,20 +1,26 @@
 .jumbotron{
-    background-color: yellow;
-    color: black;
+    background-color: #0D1B48;
+    color: #FFFFFF;
 }
 
-footer{
+footer {
     padding: 10px 10px 0 10 px;
-    background-color: yellow;
+    background-color: #343A40;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .card-libros{
-    flex: 150px;
-    padding: 2px 5px 2px 5px;
-    margin-top: 10px;
+    flex: 1 180px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 15px;
 }
+
 .btn-reserva{
-    width: 100%;    
+    width: 100%;
+
+}
+
+address {
+    color: #FFFFFF;
 }
