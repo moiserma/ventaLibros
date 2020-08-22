@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: #0D1B48;
     color: #FFFFFF;
+    margin-top: 30px;
 }
 
 footer {
@@ -24,3 +25,13 @@ footer {
 address {
     color: #FFFFFF;
 }
+
+.oi{
+    color: orange;
+}
+
+/* .card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+} */

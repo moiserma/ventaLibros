@@ -13,10 +13,31 @@
     <title>Mi biblioteca</title>
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-branb">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavdropdown" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Biblioteca</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Acerca</a></li>
+                <li class="nav-item"><a href="precios.html" class="nav-link">Precios</a></li> 
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+
         <div class="jumbotron">
         <h1>Venta de libros usados</h1>
         </div>
         <div class="container">
+            <nav aria-label="breadcrum">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active"><a href="index.html">Biblioteca</a></li>
+                </ol>
+            </nav>
             <div class="row">
             <div class="col-sm-4">
                 <p>
@@ -50,25 +71,28 @@
             </div>
             </div>
             <hr>
+
             <div class="d-flex flex-wrap flex-row-reverse">
             <h2>Aqui algunos más de nuestros titulos mas buscados por categoria:</h2>
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Novela Contemporanea</h4>
-                            <div>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Novela Contemporanea</div>
+                        <div class="card-body">
+                            <img src="img/libro-postales-este.jpeg" width="cover" alt="responsive image" class="card-img-top">
                                 <ol>
                                     <li>Postales del este - Reyes Monforte</li>
                                     <li>Cien años de Soledad - Gabriel Garcia Marquez</li>
                                     <li>Salvar el fuego - Guillermo Arriaga</li>
                                     <li>Las almas - Camila Sosa Villada</li>
                                 </ol>
-                            </div>
-                        <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
-                        </div>    
+                        </div>
+                    <div>
+                        <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                    </div>    
                 </div>
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Literatura de Bolsillo</h4>
-                        <div>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Literatura de Bolsillo</div>
+                        <div class="card-body">
+                        <img src="img/libro-tatuador-auschwitz.jpg" width="cover" alt="responsive image" class="card-img-top">
                             <ol>
                                 <li>El tatuador de Auschwitz - Heather Morris</li>
                                 <li>Patria - Fernando Aramburu</li>
@@ -77,12 +101,13 @@
                             </ol>
                         </div>    
                         <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
+                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div>
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Juvenil</h4>
-                        <div>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Juvenil</div>
+                        <div class="card-body">
+                        <img src="img/libro-bpcs.jpg" width="cover" alt="responsive image" class="card-img-top">
                             <ol>
                                 <li>Balada de pajaros cantores y serpientes - Suzanne Collins</li>
                                 <li>Cazadores de sombras - Cassandra Clare </li>
@@ -91,12 +116,13 @@
                             </ol>
                         </div>    
                         <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
+                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>    
                 </div>
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Literatura y Ciencias Politicas</h4>
-                        <div>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Literatura y Ciencias Politicas</div>
+                        <div class="card-body">
+                        <img src="img/libro-lvdp.png" width="cover" alt="responsive image" class="card-img-top">
                             <ol>
                                 <li>La verdad de la Pandemia: Quien ha sido y porque? - Cristina Martin Jimenez</li>
                                 <li> Memoria del comunismo - Federico Jimenez Losantos</li>
@@ -105,53 +131,57 @@
                             </ol>
                         </div>
                         <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
+                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div>
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Libros de Texto y Medicina</h4>
-                            <ol>
-                                <li>Vadesatu - Guia de medicacion parenteral para enfermeria - Enfermera Saturada</li>
-                                <li>Inteligencia Cosmetica: Guia de compra - Christina Carvajal</li>
-                                <li>Porque dormimos -  matthew Walker</li>
-                                <li>Un regalo para toda la vida: Guia de la lactancia materna - Carlos Gonzalez</li>
-                            </ol>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Libros de texto y Medicina</div>
+                        <div class="card-body">
+                            <img src="img/libro-Vadesatu.jpg" width="cover" alt="responsive image" class="card-img-top">
+                                <ol>
+                                    <li>Vadesatu - Guia de medicacion parenteral para enfermeria - Enfermera Saturada</li>
+                                    <li>Inteligencia Cosmetica: Guia de compra - Christina Carvajal</li>
+                                    <li>Porque dormimos -  matthew Walker</li>
+                                    <li>Un regalo para toda la vida: Guia de la lactancia materna - Carlos Gonzalez</li>
+                                </ol>
+                        </div>
                         <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
+                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div> 
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Divulgacion Cientifica</h4>
-                            <div>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Divulgacion Cientifica</div>
+                        <div class="card-body">
+                            <img src="img/libro-ubhct.jpg" width="cover" alt="responsive image" class="card-img-top">
                                 <ol>
                                     <li>Una breve historia de casi todo - Bill Bryson</li>
                                     <li>A vivir la Ciencia - Pere Estupinia</li>
                                     <li>Superbacterias - Jose Ramos Vivas</li>
                                     <li>El roden del tiempo - Carlo Rovelli</li>
                                 </ol>
-                            </div>
+                        </div>
                         <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
+                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div> 
-                <div class="card-libros d-flex flex-column justify-content-between">
-                        <h4>Viajes y Ocio</h4>
-                            <div>
+                <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
+                    <div class="card-header">Viajes y Ocio</div>
+                        <div class="card-body">
+                            <img src="img/libro-jcj.png" width="cover" alt="responsive image" class="card-img-top">
                                 <ol>
                                     <li>Japon con Jamon - Nekojitablog</li>
                                     <li>Cocina dia a dia - Karlos Arguiñano</li>
                                     <li>España 2019 (Guia Visual) - VV.AA</li>
                                     <li>Viaje por la Libre - Pedro Madera</li>
                                 </ol>
-                            </div>
+                        </div>        
                         <div>
-                            <button class="btn btn-success btn-reserva">Reservar</button>
+                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div> 
             </div>
-        </div>
 
-        <footer>
+        <footer class="card-body">
         <div class="row">
             <div class="col-sm-4 d-flex flex-column">
             <a href="http://wwww.facebook.com">Facebook</a>
@@ -172,7 +202,6 @@
             <div class="col-sm-4 d-flex flex-column align-items-end">
             <a href="http://wwww.facebook.com">Nosotros</a>
             <a href="http://wwww.instagram.com">Metodos de pago</a> 
-            <a href="http://wwww.twiter.com">Terminos y condiciones</a>
             <a href="http://wwww.google.com">Contacto</a>
             </div>
         </div>
