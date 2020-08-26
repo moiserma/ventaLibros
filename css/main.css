@@ -19,7 +19,10 @@ footer {
 
 .btn-reserva{
     width: 100%;
+}
 
+.btn-outline-success{
+    margin: 3px;
 }
 
 address {

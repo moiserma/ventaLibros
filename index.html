@@ -38,9 +38,23 @@
                   <li class="breadcrumb-item active"><a href="index.html">Biblioteca</a></li>
                 </ol>
             </nav>
+
+            <!-- Collapse y multi-collapse -->
             <div class="row">
-            <div class=" card card-libros d-flex flex-column justify-content-between ml-0">
-                <h6 class="card-header">Que categorias de libros tenemos? </h6>
+                <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#categorias" aria-expanded="false" aria-controls="multiCollapse1">¿Que categorias de libros tenemos?</button>
+                </div>
+                <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Se puede reservar?</button>
+                </div>
+                <div class="col-sm-4">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">Formas de Pago</button>
+                </div>
+              </div>
+
+            <div class="row">
+            <div class=" col-sm-4 collapse multiCollapse" id="categorias">
+                <!-- <h6 class="card-header">Que categorias de libros tenemos? </h6> -->
                 <p>
                 <ul>
                     <li>Novela contemporanea</li>
@@ -51,13 +65,13 @@
                 </ul>
                 </p>
             </div>
-            <div class="card card-libros d-flex flex-column justify-content-between ml-2">
-                <h6 class="card-header">Se puede reservar?</h6>
+            <div class="col-sm-4 collapse multiCollapse" id="reserva">
+                <!-- <h6 class="card-header">Se puede reservar?</h6> -->
                     <p>Por supuesto, con solo su nombre y numero de telefono podemos reservarle su libro de interes por 3 dias para que podamos coordinar el envio o retiro en nuestra tienda.</p>
                 </p>
             </div>
-            <div class="card card-libros d-flex flex-column justify-content-between ml-2">
-                <h6 class="card-header">Formas de Pago</h6>
+            <div class="col-sm-4 collapse multiCollapse" id="pago">
+                <!-- <h6 class="card-header">Formas de Pago</h6> -->
                 <p>                
                 <ul>
                     <li>Transferencia bancaria</li>
@@ -67,15 +81,39 @@
                 </ul>
                 </p>
             </div>
-            <img src="img/libros-00.jpg" alt="responsive-image" class="card-img" height="300px">
-         </div>
+            <hr>
+            </div>
+             <!-- Fin Collapse y multi-collapse -->
+
+            <!-- Se agrega corousel -->
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item ">
+              <img class="d-block w-100" src="/img/libros-oferta1.jpg" alt="Primer Slide">
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/img/libros-oferta2.png" alt="Tercer Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/img/libros-oferta3.png" alt="Tercer Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/libros-oferta4.jpg" alt="Tercer Slide">
+              </div>
+          </div> <!-- carousel inner -->
+          <!-- Se agregan botones de control -->
+          <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Anterior</span>
+          </a>
+          <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Siguiente</span>
+          </a>
+        </div> <!-- termina carousel -->
             <hr>
 
-
+            <h3>Aqui algunos más de nuestros titulos mas buscados por categoria:</h3>
             <div class="d-flex flex-wrap flex-row-reverse">
-            <h2>Aqui algunos más de nuestros titulos mas buscados por categoria:</h2>
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
-                    <div class="card-header">Novela Contemporanea</div>
+                    <!-- Sea agrega tooltip -->
+                    <div class="card-header" data-toggle="tooltip" data-placement="top" title="Una de nustras categorias mas solicitadas">Novela Contemporanea</div>
                         <div class="card-body">
                             <img src="img/libro-postales-este.jpeg" width="cover" alt="responsive image" class="card-img-top">
                                 <ol>
@@ -86,11 +124,13 @@
                                 </ol>
                         </div>
                     <div>
-                        <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                        <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                     </div>    
                 </div>
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
-                    <div class="card-header">Literatura de Bolsillo</div>
+                    <!-- Se agrega tooltip -->
+                    <div class="card-header" data-toggle="tooltip" data-placement="top" title="Top #1 en los mas buscados">Literatura de Bolsillo</div>
                         <div class="card-body">
                         <img src="img/libro-tatuador-auschwitz.jpg" width="cover" alt="responsive image" class="card-img-top">
                             <ol>
@@ -101,7 +141,8 @@
                             </ol>
                         </div>    
                         <div>
-                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                            <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                            <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div>
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
@@ -116,7 +157,8 @@
                             </ol>
                         </div>    
                         <div>
-                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                            <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                            <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>    
                 </div>
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
@@ -131,7 +173,8 @@
                             </ol>
                         </div>
                         <div>
-                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                            <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                            <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div>
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
@@ -146,11 +189,13 @@
                                 </ol>
                         </div>
                         <div>
-                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                            <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                            <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div> 
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
-                    <div class="card-header">Divulgacion Cientifica</div>
+                    <!-- Se agrega otro tooltip -->
+                    <div class="card-header" data-toggle="tooltip" data-placement="top" title="Otro de nustros exitos en ventas">Divulgacion Cientifica</div>
                         <div class="card-body">
                             <img src="img/libro-ubhct.png" width="cover" alt="responsive image" class="card-img-top">
                                 <ol>
@@ -161,7 +206,8 @@
                                 </ol>
                         </div>
                         <div>
-                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                            <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                            <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div> 
                 <div class=" card card-libros d-flex flex-column justify-content-between ml-2">
@@ -176,10 +222,95 @@
                                 </ol>
                         </div>        
                         <div>
-                            <button class="btn btn-success btn-reserva"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
+                            <button class="btn btn-outline-success" data-toggle="modal" data-target="#quiero">Lo quiero</button>
+                            <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar1"><span class="oi oi-plus" style="color: #F16521;"></span>Reservar</button>
                         </div>
                 </div> 
             </div>
+
+        <!-- Modal de Contacto -->
+      <div>
+        <div class="modal fade" id="quiero">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Header de la venta emergente -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Registrate con nosotros y accede a increibles promociones</h5>
+                            <button type="button" class="close" data-dismis="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <!-- Contenido de la ventana -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu email</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu nombre</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu numero de telefono</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea id="message-text" class="form-control" cols="10" rows="5" placeholder="Opcional"></textarea>
+                              </div>
+                        </form>
+                    </div> <!-- Contenido de la ventaana -->
+                    <!-- Footer de la ventana -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div><!-- Footer de la ventana -->
+                </div> <!-- modal content -->
+            </div> <!-- modal dialog -->
+        </div> <!-- modal fade -->
+    
+            <!-- modal de reserva -->
+        <div class="modal fade" id="reservar1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <!-- Header de la ventana emergente -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Completar la reservacion del titulo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <!-- Contenido de la ventana emergente-->
+                    <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="habitaciones">Cuantos libros deseas</label>
+                            <select id="habitaciones" class="form-control">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu email</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu numero de telefono</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea id="message-text" class="form-control" cols="10" rows="5"></textarea>
+                        </div>
+                        </form>
+                    </div> <!-- modal body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        </div>
+              
 
         <footer class="card-body">
         <div class="row">
@@ -210,7 +341,19 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function(){
+          $("[data-toggle='tooltip']").tooltip();
+          $("[data-toggle='popover']").popover();
+          $('.carousel').carousel({
+            interval: 1500
+          });
+        });
+      </script>
+
+
   </body>
 </html> 
