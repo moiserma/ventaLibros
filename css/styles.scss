@@ -1,0 +1,65 @@
+$fondo-cabeza: purple;
+$fondo-cuerpo: #ffff;
+$fondo-pie: #2B2050;
+
+@mixin margenes ($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin padding ($top, $right, $left, $bottom){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@mixin color ($color){
+    color: $color;
+}
+
+.jumbotron{
+    background-color: $fondo-cabeza;
+    @include color(#ffff);
+    @include margenes(50px,0px);
+}
+
+footer {
+    background-color: $fondo-pie;
+    @include margenes(10px,0px);
+    @include padding(10px, 10px, 0px, 10px)
+}
+
+.card-libros{
+    flex: 1 180px;
+    background-color: $fondo-cuerpo;
+    @include margenes(5px,0px);
+    @include padding(5px, 5px, 5px, 5px)
+}
+
+.btn-reserva{
+    width: 100%;
+}
+
+.btn-outline-success{
+    margin: 3px;
+}
+
+address {
+    @include color(#ffff);
+}
+
+.oi{
+    color: orange;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+ol{
+    padding: 5px;
+    margin: 2px;
+}
