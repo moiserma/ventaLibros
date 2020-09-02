@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imagemin": "imagemin img/* --out-dir dist/img"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/moiserma/1er-proyecto-sem1#readme",
   "devDependencies": {
+    "copyfiles": "^2.3.0",
     "lite-server": "^2.5.4"
   },
   "dependencies": {
